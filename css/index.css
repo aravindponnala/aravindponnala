@@ -502,6 +502,15 @@ article li {
   opacity: 1;
 }
 
+.work-image {
+  width: 100px; /* Adjust width */
+  height: auto; /* Keeps aspect ratio */
+  display: block; /* Ensures proper spacing */
+  margin: auto 0 0; /* Centers the image */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
 #contact-section > div {
   height: 1em;
   display: grid;
@@ -601,6 +610,31 @@ footer {
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.experience {
+  position: relative; /* Allows absolute positioning of child elements */
+  padding: 1em;
+  border: 2px solid var(--light-accent-color);
+  box-shadow: 5px 5px 0px 2px var(--light-accent-color);
+}
+
+.year, .area{
+  position: absolute;
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  font-size: 0.9em;
+  color: var(--text-hover-color);
+  background-color: var(--light-accent-color);
+  color: var(--text-color);
+  padding: 5px 10px;
+  border-radius: 0px;
+}
+
+
+.area {
+  top: 75px; /* Slightly below the year */
 }
 
 
