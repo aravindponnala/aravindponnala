@@ -187,7 +187,6 @@ removed this code
   display: flex;
   flex-direction: row;
   max-width: 50%;
-
   color: gray;
   animation-name: menu;
   animation-duration: 0.8s;
@@ -476,11 +475,38 @@ article li {
   margin-right: 0.5em;
   opacity: 1;
 }
-#contact-section > div {
+#work-history-section > div {
   height: 1em;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 95%;
+}
+
+#work-history-section > div > * {
+  margin-top: 1em;
+  box-shadow: 5px 5px 0px 2px var(--light-accent-color);
+  padding: 0.5em;
+  border: 2px solid var(--light-accent-color);
+}
+#work-history-section > div > *:hover {
+  box-shadow: 0px 0px 0px 0px;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  background-color: var(--light-accent-color);
+  transition: all 0.4s;
+}
+
+#work-history-section > div a i {
+  color: var(--text-color);
+  margin-right: 0.5em;
+  opacity: 1;
+}
+
+#contact-section > div {
+  height: 1em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 30%;
 }
 
 #contact-section > div > * {
@@ -499,8 +525,8 @@ article li {
 
 #contact-section > div a i {
   color: var(--text-color);
-  margin-right: 0.5em;
-  opacity: 1;
+  margin-right: 0.1em;
+  opacity: 10;
 }
 
 .active > * {
@@ -536,3 +562,45 @@ footer {
   font-size: 0.8em;
   text-align: center;
 }
+
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;  /* Spacing between image and text */
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 150px;  /* Adjust size */
+  height: 150px;
+  border-radius: 50%;  /* Circular photo */
+  object-fit: cover;
+  border: 5px solid #f3f3f3;  /* Soft border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text {
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff; /* Adjust based on your theme */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+

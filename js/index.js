@@ -6,7 +6,8 @@ function displaySection(link,section) {
     
     // when you click on one of the links
     lnk.onclick = (event) => {
-        
+        mk = document.querySelector("#inner-contact");
+        mk.style.display = 'block'
         // mobile js
         const mq = window.matchMedia("(max-width: 500px)");
         if(mq.matches) {
@@ -36,11 +37,20 @@ function displaySection(link,section) {
                 
             } else if (section == "projects-section") {
                 let s = document.querySelector("#projects-wrapper");
+                let k = document.g.querySelector("#inner-contact-section")
+                s.style.display = "flex";
+                s.style.flexDirection = "column";
 
                 s.style.display = "flex";
                 s.style.flexDirection = "column";
 
             } else if (section == "links-section") {
+                let linkWrapper = document.querySelector(`#${section} div`);
+                linkWrapper.style.display = "flex";
+                linkWrapper.style.flexDirection = "column";
+
+            }
+            else if (section == "work-history-section") {
                 let linkWrapper = document.querySelector(`#${section} div`);
                 linkWrapper.style.display = "flex";
                 linkWrapper.style.flexDirection = "column";
@@ -156,4 +166,6 @@ displaySection("about-me","about-me-section");
 displaySection("skills","skills-section");
 displaySection("projects","projects-section");
 displaySection("links","links-section");
+displaySection("work_history","work-history-section");
 displaySection("contact","contact-section");
+displaySection("inner-contact","contact-section");

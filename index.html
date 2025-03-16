@@ -33,18 +33,19 @@
     <div id="go-back-button"> <i class="fas fa-chevron-left"></i> Menu</div>
     <section id="about-me-intro-section" class="section">
         <p>Full Stack Web and Mobile Developer from Mauritania. I have a passion for creating seamless, beautiful and creative websites. I have experience with various programming languages and specifically web technologies. I am currently available to hire.<br></p>
-        <a href="mailto:ziyadkader@gmail.com"> Get in touch</a>
-        <a href="images/aravind_ponnala_resume.pdf" download="aravind_ponnala_resume.pdf">Download CV</a>
+        <a id="contact" href="#contact-section">Get In Touch</a>
+        <a href="https://raw.githubusercontent.com/your-username/your-repo/main/assets/aravind_ponnala_resume.pdf" target="_blank">Download CV</a>
 
     </section>
     <!-- menu -->
     <header id="menu">
         <p id="about-me"> <a href="">About Me</a> </p>
         <p id="skills"> <a href="">Skills</a> </p>
+        <p id="work_history"> <a href="">Work History</a> </p>
         <p id="projects"> <a href="">Projects</a> </p>
         <p id="links"> <a href="">Links</a> </p>
-        <p id="contact"> <a href="">Contact</a> </p>
-
+        <!-- style="display:none;" -->
+        <p id="inner-contact" style="display:none;"> <a href="#contact-section">Get In Touch</a> </p>
     </header> 
     </div>
 
@@ -53,10 +54,21 @@
     <!-- About me -->
   
     <section id="about-me-section" class="section">
-			<h2>About me</h2>
-			<p>I am a Full Stack Web & mobile Developer from Mauritania. I have a passion for creating seamless, beautiful and creative websites. I have experience with various programming languages and specifically web technologies. Life is a continuous learning process, so work makes me more rigorous.<br>
-			<a href="mailto:ziyadkader@gmail.com">Hire me</a></p>
+        <h2>About Me</h2>
+        <div class="about-me-container">
+            <img src="images/AravindProfile.jpeg" alt="Aravind Ponnal" class="profile-photo">
+            <div class="about-me-text">
+                <p>
+                    I am a Full Stack Web & Mobile Developer from Mauritania. 
+                    I have a passion for creating seamless, beautiful, and creative websites. 
+                    I have experience with various programming languages and web technologies.
+                    Life is a continuous learning process, and work makes me more rigorous.
+                </p>
+                <a href="mailto:ziyadkader@gmail.com" class="btn">Hire me</a>
+            </div>
+        </div>
     </section>
+    
     
     <!-- Skills -->
     <section id="skills-section" class="section">
@@ -185,16 +197,16 @@
 
         <h2>Links</h2>
         <div>
-            <a href="mailto:ziyadkader@gmail.com" description="Mail"><i class="fas fa-envelope" onmouseover='displayDescriptionOnLinks("fa-envelope");'></i>
-                ponnala.aravindz@gmail.com</a>
+            <!-- <a href="mailto:ziyadkader@gmail.com" description="Mail"><i class="fas fa-envelope" onmouseover='displayDescriptionOnLinks("fa-envelope");'></i>
+                ponnala.aravindz@gmail.com</a> -->
 
-            <a href="https://www.linkedin.com/in/ziyadsk/" description="Linkedin"><i class="fa-solid fa-phone"></i>
+            <a href="https://www.linkedin.com/in/ziyadsk/" description="Linkedin"><i class="fab fa-linkedin-in"></i>
                 linkedin</a>
             <a href="https://github.com/ziyadsk" description="Github"><i class="fab fa-github"></i>
                 github</a>
             <a href="https://stackoverflow.com/users/6744380/ziyadsk" description="StackOverflow"><i class="fab fa-stack-overflow" ></i>
                 stackoverflow</a>
-            <a href="https://www.linkedin.com/in/aravind-ponnala/" description="Facebook"><i class="fab fa-linkedin-in";>
+            <a href="https://www.linkedin.com/in/aravind-ponnala/" description="Facebook"><i class="fab fa-facebook";>
             </i>  linkedin</a>
             <a href="https://twitter.com/SkZiyad" description="Twitter"><i class="fab fa-twitter"></i>
                 twitter</a>
@@ -202,12 +214,22 @@
      
         </div>
     </div>
-    
     </section>
+
     <!-- Contact -->
-    <!-- Experiences -->
-<section id="contact-section" class="section">
-    <h2>Experiences</h2>
+    <section id="contact-section" class="section">
+
+        <h2>Contact</h2>
+        <div>
+           <a><i class="fa-solid fa-phone"></i>   +1 334-781-9213</a>
+           <a><i class="fa-solid fa-envelope"></i>   ponnala.aravindz@gmail.com</a>
+        </div>
+
+    </section>
+
+    <!-- Work History -->
+<section id="work-history-section" class="section">
+    <h2>Work History</h2>
     <div class="experience-wrapper">
         <div class="experience">
             <h3><a href="https://company-website.com" target="_blank">TechCorp Solutions</a></h3>
